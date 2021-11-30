@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Minimalist Portfolio</title>
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<!-- locomotive-scroll -->
+		<link
+			rel="stylesheet"
+			href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.css"
+		/>
+		<script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.2.5/dist/locomotive-scroll.min.js"></script>
+	</head>
+	<body id="js-scroll">
+		<div class="wrapper">
+			<div class="container">	
+
+				<!-- header -->
+				<div class="header">
+					<div class="header-container">
+						<h1>Mario Solis<br />Web<br />&nbsp;Designer</h1>
+					</div>
+				</div>
+
+				<!-- perfil -->
+				<div class="perfil">
+					<div class="perfil-container" data-scroll data-scroll-speed="2">
+						<img src="images/perfil.jpg" alt="" />
+					</div>
+				</div>
+
+				<!-- sections -->
+				<div class="section-header">
+					<div class="section-header-container">
+						<div class="section-title">about</div>
+						<div class="section-order">/001</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<!-- about -->
+				<section class="about">
+					<div class="about-container">
+					
+					</div>
+				</section>
+
+				<!-- projects -->
+				<div class="section-header">
+					<div class="section-header-container">
+						<div class="section-title">Projects</div>
+						<div class="section-order">/002</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<!-- social  -->
+				<div class="section-header">
+					<div class="section-header-container">
+						<div class="section-title">socials</div>
+						<div class="section-order">/003</div>
+					</div>
+				</div>
+
+				<div class="divider"></div>
+
+				<section class="socials">
+					<div class="socials-container">
+						<div class="socials-id dr"><a href="">GitHub</a></div>
+						<div class="socials-id ln"><a href="">Linkedin</a></div>
+						<div class="socials-id ig"><a href="">Instagram</a></div>
+					</div>
+				</section>
+
+				<div class="divider"></div>
+
+				<!-- footer -->
+				<div class="footer">
+					<div class="navbar">
+						<div class="navbar-container">
+							<div class="site-title">created by Mario Solis</div>
+						</div>
+					</div>
+				</div>
+				<br />
+			</div>
+		</div>
+
+		<script>
+			const scroll = new LocomotiveScroll({
+				el: document.querySelector("#js-scroll"),
+				smooth: true,
+				smoothMobile: true,
+				inertia: 0.75,
+			});
+		</script>
+	</body>
+</html>

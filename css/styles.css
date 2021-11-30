@@ -1,0 +1,158 @@
+* {
+	margin: 0;
+	padding: 0%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	font-family: "Sk-Modernist";
+	color: #fff;
+}
+
+html,
+body {
+	overflow-x: hidden;
+	background: #0a0a0a;
+}
+
+.wrapper {
+	width: 100%;
+	height: 100%;
+}
+
+.wrapper .container {
+	width: 96%;
+	margin: 0px auto;
+}
+
+.divider {
+	width: 100%;
+	height: 2px;
+	background: #fff;
+}
+
+.whitespace {
+	width: 100%;
+	height: 80px;
+}
+
+
+
+/* header */
+
+.header {
+	margin: 80px 0;
+	z-index: 2 !important;
+}
+
+.header .header-container h1 {
+	font-family: "Bigilla";
+	font-size: 12rem;
+}
+
+@media (max-width: 900px) {
+	.header .header-container h1 {
+		font-size: 5.4rem;
+	}
+}
+
+/* perfil */
+
+.perfil {
+	width: 100%;
+	margin-top: -300px;
+}
+
+.perfil::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.perfil .perfil-container {
+	width: 40%;
+	float: right;
+}
+
+.perfil .perfil-container img {
+	width: 100%;
+}
+
+@media (max-width: 900px) {
+	.perfil {
+		margin-top: 40px;
+	}
+	.perfil .perfil-container {
+		width: 100%;
+	}
+}
+
+/* section-header */
+
+.section-header .section-header-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 12px 0;
+	font-size: 16px;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+/* about */
+
+.about {
+	width: 100%;
+}
+
+.about::after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+.about .about-container {
+	width: 70%;
+	float: right;
+}
+
+.about .about-container p {
+	margin: 40px 0;
+	font-size: 36px;
+}
+
+@media (max-width: 900px) {
+	.about .about-container {
+		width: 100%;
+	}
+	.about .about-container p {
+		font-size: 24px;
+	}
+}
+
+/* socials */
+
+.socials {
+	padding: 20px 0;
+}
+
+.socials .socials-container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: justify;
+	-ms-flex-pack: justify;
+	justify-content: space-between;
+}
+
+.socials .socials-container a {
+	cursor: pointer;
+	text-decoration: none;
+	font-family: "Bigilla" !important;
+	font-size: 64px;
+}
+
+@media (max-width: 900px) {
+	.socials .socials-container a {
+		font-size: 30px;
+	}
+}
